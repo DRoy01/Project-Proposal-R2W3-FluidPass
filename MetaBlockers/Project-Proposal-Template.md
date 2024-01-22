@@ -5,6 +5,7 @@
 
 ### **FluidPass**
 
+
 ### **What are we planning to build?**
 
 We envision building a robust and user-friendly event payment system that utilizes the Superfluid protocol to revolutionize how participants are compensated for their time and engagement. 
