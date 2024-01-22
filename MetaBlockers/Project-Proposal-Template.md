@@ -63,10 +63,10 @@ Please ensure to add the names of each member of your team along with their resp
 
 **Sample:**
 
-- Ashish Sahoo ([GitHub Profile](https://github.com/Ashish-Kumar-007))
-- Debasish Roy ([GitHub Profile](https://github.com/DRoy01))
-- Mark Kamau ([GitHub Profile](https://github.com/BigmanMKG))
-- Nitin Joshi ([GitHub Profile](https://github.com/highnitin))
+- Ashish Sahoo ([GitHub Profile](https://github.com/Ashish-Kumar-007){:target="_blank"})
+- Debasish Roy ([GitHub Profile](https://github.com/DRoy01){:target="_blank"})
+- Mark Kamau ([GitHub Profile](https://github.com/BigmanMKG){:target="_blank"})
+- Nitin Joshi ([GitHub Profile](https://github.com/highnitin){:target="_blank"})
 
 ### **Individual Contribution Breakdown**
 
