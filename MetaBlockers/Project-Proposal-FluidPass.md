@@ -28,7 +28,7 @@ Traditional event payment models often rely on fixed fees or ticket prices, whic
 
 **How FluidPass Works**
 
-**Real-time Payments:** FluidPass allows for instant payments as users engage with an event. Payments are streamed in real-time, providing a fluid and efficient compensation mechanism.
+**Real-time Payments:** FluidPass allows for instant payments as users engage with an event. Payments are streamed in real time, providing a fluid and efficient compensation mechanism.
 
 **Transparency:** The use of the Superfluid protocol ensures transparency in payment transactions. All transactions can be easily tracked and verified on the blockchain.
 
@@ -62,10 +62,10 @@ Traditional event payment models often rely on fixed fees or ticket prices, whic
 
 ### **Individual Contribution Breakdown**
 
--   Ashish Sahoo:
--   Debasish Roy:
--   Mark Kamau:
--   Nitin Joshi:
+-   Ashish Sahoo: Frontend, Smart Contract Development
+-   Debasish Roy: Frontend, Smart Contract Development
+-   Mark Kamau: Backend, Data Analysis
+-   Nitin Joshi: Frontend, Brand Strategies
 
 ## **Future Prospects and Conclusion**
 
@@ -75,7 +75,7 @@ Traditional event payment models often rely on fixed fees or ticket prices, whic
 
 2. How do you plan to scale the project if there's an increase in user activity or data volume?
 
-    - To scale the project digital pass system, we'll employ cloud-based infrastructure, load balancing, and horizontal scaling for increased user activity. Database sharding, caching, and microservices architecture will optimize data handling. Autoscaling ensures dynamic resource adjustments, and comprehensive monitoring allows proactive responses. Continuous performance testing identifies potential issues, while collaboration with CDN providers(A Content Delivery Network (CDN) is a network of distributed servers strategically placed around the world to deliver web content, such as images, videos, and other resources, to users more efficiently.A CDN provider is a company that operates these networks of servers. Their primary function is to optimize the delivery of web content by storing copies of it on multiple servers (points of presence or PoPs) across various geographical locations. When a user requests a particular piece of content, the CDN provider directs the request to the nearest server, reducing latency and speeding up content delivery. This enhances website performance, decreases load times, and improves overall user experience.)This enhances content delivery globally. These strategies collectively enable the system to efficiently adapt, ensuring reliable performance during periods of heightened user engagement or increased data volume.
+    - To scale the project's digital pass system, we'll employ cloud-based infrastructure, load balancing, and horizontal scaling for increased user activity. Database sharding, caching, and microservices architecture will optimize data handling. Autoscaling ensures dynamic resource adjustments and comprehensive monitoring allows proactive responses. Continuous performance testing identifies potential issues, while collaboration with CDN providers(A Content Delivery Network (CDN) is a network of distributed servers strategically placed around the world to deliver web content, such as images, videos, and other resources, to users more efficiently. A CDN provider is a company that operates these networks of servers. Their primary function is to optimize the delivery of web content by storing copies of it on multiple servers (points of presence or PoPs) across various geographical locations. When a user requests a particular piece of content, the CDN provider directs the request to the nearest server, reducing latency and speeding up content delivery. This enhances website performance, decreases load times, and improves overall user experience.)This enhances content delivery globally. These strategies collectively enable the system to efficiently adapt, ensuring reliable performance during periods of heightened user engagement or increased data volume.
 
 3. Provide a concise one-line summary of your proposal and its objectives.
     - The project aims to create a pay-as-you-go digital pass and payment system for offline events, utilizing innovative technologies to enable dynamic payments based on participant presence, with future prospects including enhanced user engagement features and global scalability.
