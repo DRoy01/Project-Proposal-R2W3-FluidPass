@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./src/components/App";
-import RegisterEvent from "./src/pages/RegisterEvent";
-import Events from "./src/components/Events";
-import BookTickets from "./src/components/BookTickets";
-import Register from "./src/components/Register";
+import App from "./frontend/components/App";
+import RegisterEvent from "./frontend/pages/RegisterEvent";
+import Events from "./frontend/components/Events";
+import BookTickets from "./frontend/components/BookTickets";
+import Register from "./frontend/components/Register";
 const router = createBrowserRouter([
 	{
 		path: "/",
