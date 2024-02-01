@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+
+
+# Visual Studio Code
+.vscode/
+
+
+# Environment variables file
+.env
