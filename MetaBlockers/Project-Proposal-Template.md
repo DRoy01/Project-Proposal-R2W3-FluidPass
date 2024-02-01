@@ -55,6 +55,8 @@ Traditional event payment models often rely on fixed fees or ticket prices, whic
 
 ### **Teammates**
 
+Here are the names of each member of FluidPass team along with their respective GitHub profiles.
+
 -   Ashish Sahoo ([GitHub Profile](https://github.com/Ashish-Kumar-007))
 -   Debasish Roy ([GitHub Profile](https://github.com/DRoy01))
 -   Mark Kamau ([GitHub Profile](https://github.com/BigmanMKG))
