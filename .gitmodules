@@ -1,0 +1,6 @@
+[submodule "MetaBlockers/FluidPass/Contracts"]
+	path = MetaBlockers/FluidPass/Contracts
+	url = https://github.com/Ashish-Kumar-007/Contracts.git
+[submodule "MetaBlockers/FluidPass/Backend"]
+	path = MetaBlockers/FluidPass/Backend
+	url = https://github.com/Ashish-Kumar-007/Backend.git
