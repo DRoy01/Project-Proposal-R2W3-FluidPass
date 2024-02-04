@@ -1,0 +1,69 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+# https://docs.npmjs.com/cli/v7/configuring-npm/package-json#directorieslib
+lib/
+vendor/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ
+.idea/
+
+# Log files
+*.log
+
+# Environment variables file
+.env
+
+# Compiled binary files
+*.o
+*.out
+*.exe
+
+# Editor-specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Node.js debug files
+*.js.map
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Parcel
+dist/
+
+# Build results
+/build/
+
+# Misc
+.DS_Store
+desktop.ini
+Thumbs.db
