@@ -1,0 +1,7 @@
+@openzeppelin/=lib/openzeppelin-contracts/
+@superfluid-finance/=lib/superfluid-protocol-monorepo/packages/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/
+@openzeppelin/=lib/openzeppelin-contracts/contracts/
+superfluid-protocol-monorepo/=lib/superfluid-protocol-monorepo/packages/solidity-semantic-money/src/
