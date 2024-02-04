@@ -59,6 +59,26 @@ a{
   text-decoration: none;
 }
 
+.cancelButton {
+  width: 330px;
+  height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-decoration: none;
+}
+
 .btn-16 {
   border: none;
   color: #000;
@@ -238,7 +258,22 @@ li {
 }
 
 
-.card:hover{
+.card-custom{
+    border: 2px solid rgba(128, 128, 128, 0.247);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(125, 82, 67, 0.831);
+}
+
+
+.card-custom:hover{
     border: 2px solid rgba(128, 128, 128, 0.486);
     background-color: darksalmon;
     color: white;
@@ -273,12 +308,14 @@ li {
 }
 
 .cardFeaturedSection{
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    /* justify-content: space-evenly; */
+    gap: 35px;
+    justify-content: space-between;
 
 }
+
 
 .buttonCard {
     padding: 12px 15px;
@@ -289,14 +326,47 @@ li {
 }
 
 .singleCompanyCard{
-  margin: 50px;
+  margin: 30px 50px 75px 50px;
   width: 500px;
+  display: flex;
+  /* flex-direction: column; */
+
 }
 
-.singleCompanyCardContainer{
+.singleCompanyCardCenter{
+  margin: 30px 50px 75px 50px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+
+}
+
+.singleCompanyCardContainer {
   display: flex;
   flex-direction: row;
-  
+  align-items: center;
+  justify-content: center;
+}
+
+
+.singleCompanyCardContainer {
+  @media only screen and (max-width: 857px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .form{
@@ -310,7 +380,7 @@ li {
   margin-top: 10px;
   border-radius: 10px;
   padding: 5px;
-
+  
 }
 
 .form :last-child{
@@ -325,8 +395,87 @@ li {
 
 .formWithDataBase{
   margin-bottom: 50px;
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
 }
 
 .formHeadline{
   text-align: center;
+}
+
+.metamaskButtonContainer{
+  display: flex;
+  gap: 15px;
+}
+
+.OnlineImg{
+  width: 10%;
+}
+
+.joinEvent{
+  width: 10%;
+}
+
+.cancleEventImage{
+  width: 5%;
+}
+
+.cardHeadlinHeadingRed{
+  text-align: center;
+  color: red;
+}
+
+.marginForEventPageButton{
+  margin: 15px 0px 10px 0px;
+  font-weight: 600;
+}
+
+.part1RegisterPage{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.part2RegisterPage{
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.headingTextForRegisterPage{
+  margin: 10px 0 -5px 0;
+  font-size: 26px;
+  text-decoration: underline;
+}
+.paragraph1TextForRegisterPage{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  /* margin-top: -20px; */
+}
+.paragraph2TextForRegisterPage{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.marBtn{
+  margin: -25px 0 50px 0;
+  background-color: white;
+}
+
+.marBtnGreen{
+  margin: -25px 0 50px 0;
+  background-color: white;
+  color: white;
 }

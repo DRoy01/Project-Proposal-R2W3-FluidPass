@@ -28,11 +28,11 @@ export default async function createFlow() {
 
   const superSigner = sf.createSigner({ signer: signer });
 
-  console.log(signer);
-  console.log(await superSigner.getAddress());
+  // console.log(signer);
+  // console.log(await superSigner.getAddress());
   const daix = await sf.loadSuperToken("fDAIx");
 
-  console.log(daix);
+  // console.log(daix);
 
   try {
     const createFlowOperation = daix.createFlow({
@@ -42,23 +42,26 @@ export default async function createFlow() {
       // userData?: string
     });
 
-    console.log(createFlowOperation);
-    console.log("Creating your stream...");
+    // console.log(createFlowOperation);
+    // console.log("Creating your stream...");
 
     const result = await createFlowOperation.exec(superSigner);
-    console.log(result);
+    // console.log(result);
 
-    console.log(
-      `Congrats - you've just created a money stream!
-    `
-    );
+    // console.log(`Congrats - you've just created a money stream!`);
     let sender = await superSigner.getAddress()
-    console.log(`https://console.superfluid.finance/goerli/accounts/${sender}?tab=tokens`)
+    // let gasReceiver = "0x03905E154e6F499F99DDa452502aDfbC4842aD4F";
+    // console.log(`https://console.superfluid.finance/mumbai/streams/${sender}-${gasReceiver}-0x5d8b4c2554aeb7e86f387b4d6c00ac33499ed01f-8.0`);
+    // console.log(`https://console.superfluid.finance/goerli/accounts/${sender}?tab=tokens`)
+    // console.log(`https://console.superfluid.finance/goerli/accounts/${sender}?tab=tokens`)
+
+
+
     return true;
   } catch (error) {
-    console.log(
-      "Hmmm, your transaction threw an error. Make sure that this stream does not already exist, and that you've entered a valid Ethereum address!"
-    );
+    // console.log(
+    //   "Hmmm, your transaction threw an error. Make sure that this stream does not already exist, and that you've entered a valid Ethereum address!"
+    // );
     console.error(error);
     return false;
   }

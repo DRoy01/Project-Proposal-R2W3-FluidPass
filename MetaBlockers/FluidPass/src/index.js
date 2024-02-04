@@ -6,6 +6,7 @@ import RegisterEvent from "./frontend/pages/RegisterEvent";
 import Events from "./frontend/components/Events";
 import BookTickets from "./frontend/components/BookTickets";
 import Register from "./frontend/components/Register";
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
 	{
 		path: "registerevent",
 		element: <RegisterEvent />,
-	},
+	}, 
 	{
 		path: "events",
 		element: <Events />,

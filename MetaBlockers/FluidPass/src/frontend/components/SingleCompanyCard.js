@@ -5,6 +5,9 @@ import connectWallet from "../../ConnectWallet";
 import createFlow from "../../CreateFlow";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import onlineConnected from "../img/onlineConnected.png";
+import joinEventPng from "../img/joinEventPng.png";
+
 
 const SingleCompanyCard = () => {
   const [isConnected, setIsConnected] = useState(false);
@@ -22,7 +25,7 @@ const SingleCompanyCard = () => {
 	// const isStarted = true;
     if (isStarted) {
       setIsJoined(true);
-	  toast.success("Joined the event and Money Streaming started!")
+	  toast.success("Registration Successful, Money Is Streaming!")
     } else {
 		toast.error("Failed to join the event")
       setIsJoined(false);
@@ -43,35 +46,43 @@ const SingleCompanyCard = () => {
   return (
     <section className="singleCompanyCardContainer">
 		<ToastContainer />
-      <section className="card singleCompanyCard">
+      <section className="card-custom singleCompanyCard">
         <img className="cardImg" src={imageUrl} alt="Image Event Page" />
         <h3>
           {name} by {companyName}
         </h3>
         <section className="cardFeaturedSection">
           <p>{date} </p>
-          <p>{price} </p>
+          <p>{price} </p> 
           <p>{country} </p>
         </section>
         <p>{description}</p>
         <p>{location}</p>
 
         {isConnected ? (
-          <>
+          <section className="metamaskButtonContainer">
             {isJoined ? (
               <Link to="/booktickets" className="homeButton">
-                <button className="custom-btn btn-16">Enter Into Event</button>
+                <button className="custom-btn btn-16 buttonContainer">
+                <img className="joinEvent" src={joinEventPng}
+				alt="Join now! Event is live" />
+                  <span>
+                    Enter Into Event
+                    </span>
+                  </button>
               </Link>
             ) : (
+              
               <button className="custom-btn btn-16" onClick={joinEvent}>
                 Book Your Pass
               </button>
             )}
-
-            <button className="custom-btn btn-16" disable>
-              Connected to Wallet
+            <button className="custom-btn btn-16 buttonContainer" disable>
+              <img className="OnlineImg" src={onlineConnected}
+				alt="Successful, walled connected" />
+              <span>Wallet Connected</span>
             </button>
-          </>
+          </section>
         ) : (
           <button className="custom-btn btn-16" onClick={connect}>
             Connect Wallet
@@ -79,7 +90,7 @@ const SingleCompanyCard = () => {
         )}
       </section>
       {isConnected ? (
-        <section className="card singleCompanyCard">
+        <section className="card-custom singleCompanyCardCenter">
           <div>
             <section className="cardFeaturedSection">
               <p>{date} </p>
@@ -94,7 +105,7 @@ const SingleCompanyCard = () => {
                 <input placeholder="+91 XXXXXXXXXX" name="Phone" type="text" />
                 <input placeholder="Need Help" name="Subject" type="text" />
                 <input placeholder="Your Message" name="Message" type="text" />
-                <input name="Name" type="submit" />
+                <input name="Name" type="submit" value="Book Your Pass"/>
               </form>
             </div>
           </div>
