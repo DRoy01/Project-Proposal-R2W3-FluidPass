@@ -1,3 +1,5 @@
+
+
 body{
     background-color: black;
     /* font-family: "Honk", system-ui; */
@@ -95,26 +97,28 @@ a{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* position: relative; */
+    position: relative;
     justify-content: center;
-    
+    background-color: rgb(40, 40, 43);
+    width: 105%;
+    min-height: 100vh; /* Add this line */
 }
-
-
-
 
 .headerSection {
-    background-color: bisque;
-    border: 2px solid white;
-    border-radius: 4px;
-    padding: 5px 15px;
-    box-shadow: 5px 10px #7a7a7a3b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: bisque;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 5px 15px;
+  box-shadow: 5px 10px #7a7a7a3b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  z-index: 1000; /* Ensure the header is above other elements */
 }
-
 
 .navBarList{
     display: flex;
@@ -152,8 +156,8 @@ li {
     overflow: hidden;
     margin-bottom: 70px;
     background: radial-gradient(rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
-  background-size: 300% 300%;
-  animation: colorChange 10s infinite linear;
+    background-size: 300% 300%;
+    animation: colorChange 10s infinite linear;
 
  }
 
@@ -225,7 +229,7 @@ li {
 
 
 .card{
-    border: 2px solid rgba(128, 128, 128, 0.247);
+    border: 2px solid rgba(255, 255, 255, 0.247);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -236,6 +240,7 @@ li {
     width: 250px;
     transition: transform 0.3s ease-in-out;
 }
+
 
 
 .card:hover{
@@ -291,18 +296,40 @@ li {
 .singleCompanyCard{
   margin: 50px;
   width: 500px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  padding: 15px;
+  background-color: bisque;
 }
 
 .singleCompanyCardContainer{
   display: flex;
   flex-direction: row;
-  
+  flex-wrap: wrap;
+  color: black;
 }
 
 .form{
   display: flex;
   flex-direction: column;
   padding: 15px
+}
+
+.formSection {
+  width: 500px;
+  box-sizing: border-box;
+  padding: 15px;
+
+  /* Add other styles as needed */
+}
+
+@media (max-width: 768px) {
+  .singleCompanyCard {
+    width: 100%; /* On smaller screens, the card takes full width */
+  }
+
+  .formSection {
+    width: 100%; /* The form also takes full width on smaller screens */
+  }
 }
 
 .form input {
@@ -329,4 +356,90 @@ li {
 
 .formHeadline{
   text-align: center;
+}
+
+
+
+/** Connect Wallet & Join Event button
+**/
+
+.card-buttons-container {
+  display: flex;
+  justify-content: space-between;  /* or 'space-around' if you want some space on both sides */
+  width: 100%;  /* or any other width you desire */
+}
+
+.connect-wallet-btn,
+.join-event-btn {
+  width: 200px;
+  height: 45px;
+  color: #181616;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-decoration: none;
+}
+
+
+/* For the Registration Page Cards
+*/
+.gradient-card {
+  --borderWidth: 3px;
+  /* background: #1D1F20; */
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-card:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.connected {
+  background-color: green;
+  border-color: green;
+  cursor: not-allowed;
+}
+
+.connected:hover {
+  background-color: green;
+  border-color: green;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
